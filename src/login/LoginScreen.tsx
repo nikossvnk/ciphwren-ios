@@ -29,7 +29,6 @@ import { useLoading, startTask } from "../helpers";
 import { SyncManager } from "../sync/SyncManager";
 import { credentialsSelector } from ".";
 
-import * as C from "../constants";
 import { useCredentials } from "../credentials";
 import { useNavigation } from "@react-navigation/native";
 
@@ -173,19 +172,9 @@ const LoginScreen = React.memo(function _LoginScreen() {
   const dispatch = useAsyncDispatch();
   const [loading, error, setPromise] = useLoading();
 
-  function onFormSubmit(username: string, password: string, serviceApiUrl?: string) {
+  function onFormSubmit(username: string, password: string, serviceApiUrl: string) {
     setPromise((async () => {
-      let isEtebase;
-      if (serviceApiUrl) {
-        isEtebase = await Etebase.Account.isEtebaseServer(serviceApiUrl);
-      } else if (username.includes("@")) {
-        serviceApiUrl = C.serviceApiBase;
-        isEtebase = false;
-      } else {
-        serviceApiUrl = C.serviceApiBaseEb;
-        isEtebase = true;
-      }
-
+      const isEtebase = await Etebase.Account.isEtebaseServer(serviceApiUrl);
       if (isEtebase) {
         const etebase = await Etebase.Account.login(username, password, serviceApiUrl);
         dispatch(loginEb(etebase));

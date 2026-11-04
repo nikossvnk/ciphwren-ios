@@ -2,7 +2,7 @@
 // SPDX-License-Identifier: GPL-3.0-only
 
 import * as React from "react";
-import { Linking, TextInput as NativeTextInput } from "react-native";
+import { TextInput as NativeTextInput } from "react-native";
 import { List, HelperText, Switch, useTheme } from "react-native-paper";
 import { useDispatch, useSelector } from "react-redux";
 
@@ -158,13 +158,6 @@ const SettingsScreen = function _SettingsScreen() {
         {loggedIn && (
           <List.Section>
             <List.Subheader>Account</List.Subheader>
-            {!C.genericMode &&
-              <List.Item
-                title="Account Dashboard"
-                description="Change your payment info, plan and other account settings"
-                onPress={() => { Linking.openURL(C.dashboard) }}
-              />
-            }
             <List.Item
               title="Change Password"
               description="Change your account's password"

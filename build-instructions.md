@@ -10,7 +10,7 @@ These are high-level instructions for building the app.
 
 Before doing the above build do the following:
 
-1. Update the deploy version (the number in the export url) in:
+1. Update the export url (your own host, set as `PUBLIC_URL` and the `SSH_*` variables for `deploy_dist.sh`; `https://expo.example.com` is a placeholder) and the deploy version (the number in it) in:
   1. ios/etesync/Supporting/EXShell.{plist,json}
   2. `deploy_dist.sh`
 2. run `yarn export` the same way it's run in `deploy_dist.sh` (you can essentially run the script and just let the deployment itself fail).

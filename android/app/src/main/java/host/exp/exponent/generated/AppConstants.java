@@ -26,8 +26,8 @@ public class AppConstants {
     
       // ADD EMBEDDED RESPONSES HERE
       // START EMBEDDED RESPONSES
-      embeddedResponses.add(new Constants.EmbeddedResponse("https://expo.etesync.com/release/5/android-index.json", "assets://shell-app-manifest.json", "application/json"));
-      embeddedResponses.add(new Constants.EmbeddedResponse("https://expo.etesync.com/release/5/bundles/android-d9c315522a5c2e60cdc6c397465e7e31.js", "assets://shell-app.bundle", "application/javascript"));
+      embeddedResponses.add(new Constants.EmbeddedResponse("https://expo.example.com/release/5/android-index.json", "assets://shell-app-manifest.json", "application/json"));
+      embeddedResponses.add(new Constants.EmbeddedResponse("https://expo.example.com/release/5/bundles/android-d9c315522a5c2e60cdc6c397465e7e31.js", "assets://shell-app.bundle", "application/javascript"));
       // END EMBEDDED RESPONSES
     EMBEDDED_RESPONSES = embeddedResponses;
   }

@@ -46,8 +46,8 @@ export default function AboutScreen() {
       ListHeaderComponent={() => (
         <Container>
           <Title style={{ textAlign: "center" }}>{C.appName} {expo.version}</Title>
-          <TouchableRipple onPress={() => { Linking.openURL(C.homePage) }}>
-            <Text style={{ textAlign: "center", color: theme.colors.accent, textDecorationLine: "underline", margin: 10 }}>{C.homePage}</Text>
+          <TouchableRipple onPress={() => { Linking.openURL(C.sourceCode) }}>
+            <Text style={{ textAlign: "center", color: theme.colors.accent, textDecorationLine: "underline", margin: 10 }}>{C.sourceCode}</Text>
           </TouchableRipple>
           <Markdown content={markdownContent} />
 

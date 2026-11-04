@@ -2,7 +2,7 @@
 // SPDX-License-Identifier: GPL-3.0-only
 
 import * as React from "react";
-import { Linking, TextInput as NativeTextInput } from "react-native";
+import { TextInput as NativeTextInput } from "react-native";
 import { List, Paragraph, HelperText, Switch, useTheme } from "react-native-paper";
 import { useDispatch, useSelector } from "react-redux";
 
@@ -239,13 +239,6 @@ export default function SettingsScreenLegacy() {
         {loggedIn && (
           <List.Section>
             <List.Subheader>Account</List.Subheader>
-            {!C.genericMode &&
-              <List.Item
-                title="Account Dashboard"
-                description="Change your payment info, plan and other account settings"
-                onPress={() => { Linking.openURL(C.dashboard) }}
-              />
-            }
             <List.Item
               title="Authentication Password"
               description="Use a different authentication password"

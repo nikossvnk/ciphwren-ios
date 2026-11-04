@@ -6,12 +6,9 @@ import * as React from "react";
 import { Text, View, TextInput as NativeTextInput } from "react-native";
 import { Switch, Button, HelperText, Paragraph, TouchableRipple } from "react-native-paper";
 
-
-import ExternalLink from "../widgets/ExternalLink";
 import Row from "../widgets/Row";
 import TextInput from "../widgets/TextInput";
 
-import * as C from "../constants";
 import PasswordInput from "../widgets/PasswordInput";
 
 interface FormErrors {
@@ -20,11 +17,11 @@ interface FormErrors {
   server?: string;
 }
 
-// Can be used to force always showing advance, e.g. for genericMode
+// Can be used to force always showing advance
 const alwaysShowAdvanced = false;
 
 interface PropsType {
-  onSubmit: (username: string, password: string, serviceApiUrl?: string) => void;
+  onSubmit: (username: string, password: string, serviceApiUrl: string) => void;
 }
 
 export default function LoginForm(props: PropsType) {
@@ -39,7 +36,8 @@ export default function LoginForm(props: PropsType) {
   const serverRef = React.useRef<NativeTextInput>();
 
   function onSubmit() {
-    const serverUrl = showAdvanced ? server : undefined;
+    // There's no default server: the user must give theirs
+    const serverUrl = server.trim();
 
     const errors: FormErrors = {};
     const fieldRequired = "This field is required!";
@@ -48,6 +46,11 @@ export default function LoginForm(props: PropsType) {
     }
     if (!password) {
       errors.password = fieldRequired;
+    }
+    if (!serverUrl) {
+      errors.server = fieldRequired;
+      // The field is under the advanced settings, so show it with its error
+      setShowAdvanced(true);
     }
 
     setErrors(errors);
@@ -99,13 +102,6 @@ export default function LoginForm(props: PropsType) {
         >
           {errors.password}
         </HelperText>
-        {!C.genericMode && (
-          <>
-            <ExternalLink href={C.forgotPassword}>
-              Forget password?
-            </ExternalLink>
-          </>
-        )}
 
         <TouchableRipple
           onPress={() => setShowAdvanced(!showAdvanced)}
@@ -129,7 +125,7 @@ export default function LoginForm(props: PropsType) {
               label="Server URL"
               accessibilityLabel="Server URL"
               value={server}
-              placeholder="E.g. https://api.etebase.com"
+              placeholder="E.g. https://etebase.example.com"
               onChangeText={setServer}
               ref={serverRef}
             />

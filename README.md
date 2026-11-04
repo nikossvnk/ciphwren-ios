@@ -6,17 +6,17 @@
 Secure, end-to-end encrypted, and privacy respecting sync for your contacts, calendars and tasks (iOS client).
 
 ![GitHub tag](https://img.shields.io/github/tag/etesync/ios.svg)
-[![Chat with us](https://img.shields.io/badge/chat-IRC%20|%20Matrix%20|%20Web-blue.svg)](https://www.etebase.com/community-chat/)
 
 # Overview
 
-Please see the [EteSync website](https://www.etesync.com) for more information.
+The app syncs with an Etebase (or legacy EteSync) server that you run yourself: enter its URL
+(e.g. `https://etebase.example.com`) when logging in.
 
 EteSync is licensed under the [GPLv3 License](LICENSE).
 
 # Setup
 
-For setup instructions please take a look at the [user guide](https://www.etesync.com/user-guide/ios/).
+See [build-instructions.md](build-instructions.md) for building the app.
 
 # Thanks
 

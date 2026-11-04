@@ -34,33 +34,16 @@ const menuItems = [
 
 const externalMenuItems = [
   {
+    title: "Source code",
+    link: C.sourceCode,
+    icon: "home",
+  },
+  {
     title: "Report issue",
     link: C.reportIssue,
     icon: "bug",
   },
-  {
-    title: "Contact developer",
-    link: `mailto:${C.contactEmail}`,
-    icon: "email",
-  },
 ];
-
-if (!C.genericMode) {
-  externalMenuItems.unshift(
-    {
-      title: "FAQ",
-      link: C.faq,
-      icon: "forum",
-    }
-  );
-  externalMenuItems.unshift(
-    {
-      title: "Web site",
-      link: C.homePage,
-      icon: "home",
-    }
-  );
-}
 
 function FingerprintDialog(props: { visible: boolean, onDismiss: () => void }) {
   const userInfo = useSelector((state: StoreState) => state.cache.userInfo);
