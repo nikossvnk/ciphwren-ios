@@ -3032,9 +3032,9 @@ etag@~1.8.1:
   resolved "https://registry.yarnpkg.com/etag/-/etag-1.8.1.tgz#41ae2eeb65efa62268aebfea83ac7d79299b0887"
   integrity sha1-Qa4u62XvpiJorr/qg6x9eSmbCIc=
 
-"etebase@https://github.com/nikossvnk/etebase-js/releases/download/v0.44.2/etebase-0.44.2.tgz":
-  version "0.44.2"
-  resolved "https://github.com/nikossvnk/etebase-js/releases/download/v0.44.2/etebase-0.44.2.tgz#1fc0acd4e41122486a0b34cb57554f997b03c3e1"
+"etebase@https://github.com/nikossvnk/etebase-js/releases/download/v0.44.3/etebase-0.44.3.tgz":
+  version "0.44.3"
+  resolved "https://github.com/nikossvnk/etebase-js/releases/download/v0.44.3/etebase-0.44.3.tgz#43bc97d43adb5ee3ebab696ebcb849c1fdda6968"
   dependencies:
     "@msgpack/msgpack" "^1.12.2"
     "@types/urijs" "^1.19.26"
@@ -6273,9 +6273,9 @@ react-native-appearance@~0.3.1:
     invariant "^2.2.4"
     use-subscription "^1.0.0"
 
-"react-native-etebase@https://github.com/nikossvnk/etebase-js/releases/download/v0.44.2/react-native-etebase-0.44.2.tgz":
-  version "0.44.2"
-  resolved "https://github.com/nikossvnk/etebase-js/releases/download/v0.44.2/react-native-etebase-0.44.2.tgz#6eace486b80d4abec088b7bb675769562e5232d8"
+"react-native-etebase@https://github.com/nikossvnk/etebase-js/releases/download/v0.44.3/react-native-etebase-0.44.3.tgz":
+  version "0.44.3"
+  resolved "https://github.com/nikossvnk/etebase-js/releases/download/v0.44.3/react-native-etebase-0.44.3.tgz#67809e9907de395c4fd578f7ee2fa57c255ac4b1"
   dependencies:
     crypto "npm:leftpad"
     fs "^0.0.1-security"
