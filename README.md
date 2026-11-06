@@ -3,9 +3,14 @@
   <h1 align="center">EteSync - Secure Data Sync</h1>
 </p>
 
-Secure, end-to-end encrypted, and privacy respecting sync for your contacts, calendars and tasks (iOS client).
+> [!NOTE]
+> **This is an independent fork** of [EteSync iOS](https://github.com/etesync/ios), the original
+> project of the EteSync authors. This fork is not affiliated with, endorsed by or supported by EteSync
+> in any way. The history of the original project is kept as it is, with its authors, and the changes
+> of this fork follow it. Like the original, it's licensed under the
+> [GPL-3.0](LICENSES/GPL-3.0-only).
 
-![GitHub tag](https://img.shields.io/github/tag/etesync/ios.svg)
+Secure, end-to-end encrypted, and privacy respecting sync for your contacts, calendars and tasks (iOS client).
 
 # Overview
 
