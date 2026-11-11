@@ -1,6 +1,6 @@
 <p align="center">
   <img width="120" src="assets/icon.png" />
-  <h1 align="center">EteSync - Secure Data Sync</h1>
+  <h1 align="center">Ciphwren</h1>
 </p>
 
 > [!NOTE]
@@ -17,7 +17,9 @@ Secure, end-to-end encrypted, and privacy respecting sync for your contacts, cal
 The app syncs with an Etebase (or legacy EteSync) server that you run yourself: enter its URL
 (e.g. `https://etebase.example.com`) when logging in.
 
-EteSync is licensed under the [GPLv3 License](LICENSE).
+It's a separate app (`com.ciphwren.ios`) from EteSync's: an EteSync install doesn't update to it.
+
+Ciphwren is licensed under the [GPLv3 License](LICENSE).
 
 # Setup
 
@@ -25,7 +27,7 @@ See [build-instructions.md](build-instructions.md) for building the app.
 
 # Thanks
 
-<p>EteSync iOS is made possible with financial support from <a
+<p>EteSync iOS, which this is a fork of, was made possible with financial support from <a
 href="https://nlnet.nl/">NLnet Foundation</a>, courtesy of <a
 href="https://nlnet.nl/discovery">NGI0 Discovery<a/> and the <a
 href="https://ec.europa.eu">European Commission</a> <a

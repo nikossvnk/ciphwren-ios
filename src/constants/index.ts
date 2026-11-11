@@ -1,8 +1,8 @@
 // SPDX-FileCopyrightText: © 2019 EteSync Authors
 // SPDX-License-Identifier: GPL-3.0-only
 
-export const appName = "EteSync";
-export const sourceCode = "https://github.com/nikossvnk/etesync-ios";
+export const appName = "Ciphwren";
+export const sourceCode = "https://github.com/nikossvnk/ciphwren-ios";
 export const reportIssue = sourceCode + "/issues";
 
 // Sync app mode is an experimental mode for controlling sync settings

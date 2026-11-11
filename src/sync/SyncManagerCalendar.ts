@@ -4,7 +4,7 @@
 import * as Etebase from "etebase";
 import * as Calendar from "expo-calendar";
 
-import { calculateHashesForEvents, processEventsChanges, BatchAction, HashDictionary } from "../EteSyncNative";
+import { calculateHashesForEvents, processEventsChanges, BatchAction, HashDictionary } from "../CiphwrenNative";
 
 import { logger } from "../logging";
 

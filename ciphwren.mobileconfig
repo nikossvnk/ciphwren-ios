@@ -12,37 +12,37 @@
     <string>Configuration</string>
 
     <key>PayloadIdentifier</key>
-    <string>com.etesync.ios</string>
+    <string>com.ciphwren.ios</string>
 
     <key>PayloadDisplayName</key>
-    <string>EteSync Accounts</string>
+    <string>Ciphwren Accounts</string>
 
     <key>PayloadOrganization</key>
-    <string>EteSync</string>
+    <string>Ciphwren</string>
 
     <key>Label</key>
-    <string>Account configuration for the EteSync app</string>
+    <string>Account configuration for the Ciphwren app</string>
 
     <key>PayloadContent</key>
     <array>
     <dict>
         <key>CardDAVAccountDescription</key>
-        <string>etesync</string>
+        <string>ciphwren</string>
 
         <key>CardDAVHostName</key>
         <string>127.0.0.1</string>
 
         <key>CardDAVUsername</key>
-        <string>etesync</string>
+        <string>ciphwren</string>
 
         <key>CardDAVPassword</key>
-        <string>etesync</string>
+        <string>ciphwren</string>
 
         <key>PayloadDescription</key>
         <string>Configures CardDAV account</string>
 
         <key>PayloadIdentifier</key>
-        <string>com.etesync.ios.carddav</string>
+        <string>com.ciphwren.ios.carddav</string>
 
         <key>PayloadType</key>
         <string>com.apple.carddav.account</string>
@@ -55,22 +55,22 @@
     </dict>
     <dict>
         <key>CalDAVAccountDescription</key>
-        <string>etesync</string>
+        <string>ciphwren</string>
 
         <key>CalDAVHostName</key>
         <string>127.0.0.1</string>
 
         <key>CalDAVUsername</key>
-        <string>etesync</string>
+        <string>ciphwren</string>
 
         <key>CalDAVPassword</key>
-        <string>etesync</string>
+        <string>ciphwren</string>
 
         <key>PayloadDescription</key>
         <string>Configures CalDAV account</string>
 
         <key>PayloadIdentifier</key>
-        <string>com.etesync.ios.caldav</string>
+        <string>com.ciphwren.ios.caldav</string>
 
         <key>PayloadType</key>
         <string>com.apple.caldav.account</string>

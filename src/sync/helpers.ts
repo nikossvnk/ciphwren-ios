@@ -6,7 +6,7 @@ import * as Contacts from "expo-contacts";
 import * as ICAL from "ical.js";
 import sjcl from "sjcl";
 
-import { getContainers } from "../EteSyncNative";
+import { getContainers } from "../CiphwrenNative";
 
 import { PRODID, ContactType, EventType, TaskType, TaskStatusType, timezoneLoadFromName } from "../pim-types";
 
