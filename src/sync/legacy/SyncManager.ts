@@ -3,7 +3,7 @@
 
 import { activateKeepAwake, deactivateKeepAwake } from "expo-keep-awake";
 
-import { beginBackgroundTask, endBackgroundTask } from "../../EteSyncNative";
+import { beginBackgroundTask, endBackgroundTask } from "../../CiphwrenNative";
 
 import * as EteSync from "etesync";
 

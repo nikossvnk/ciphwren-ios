@@ -7,7 +7,7 @@ import * as BackgroundFetch from "expo-background-fetch";
 import * as TaskManager from "expo-task-manager";
 import * as Permissions from "expo-permissions";
 
-import { beginBackgroundTask, endBackgroundTask } from "../EteSyncNative";
+import { beginBackgroundTask, endBackgroundTask } from "../CiphwrenNative";
 
 import * as Etebase from "etebase";
 

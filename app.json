@@ -1,15 +1,15 @@
 {
   "expo": {
-    "name": "EteSync",
+    "name": "Ciphwren",
     "description": "Secure, end-to-end encrypted, and privacy respecting sync for your contacts, calendars and tasks.",
-    "slug": "etesync-ios",
+    "slug": "ciphwren-ios",
     "privacy": "public",
     "sdkVersion": "36.0.0",
     "platforms": [
       "ios"
     ],
     "version": "1.6.1",
-    "githubUrl": "https://github.com/nikossvnk/etesync-ios",
+    "githubUrl": "https://github.com/nikossvnk/ciphwren-ios",
     "icon": "./assets/icon.png",
     "splash": {
       "image": "./assets/splash.png",
@@ -20,14 +20,14 @@
       "**/*"
     ],
     "ios": {
-      "bundleIdentifier": "com.etesync.ios",
+      "bundleIdentifier": "com.ciphwren.ios",
       "buildNumber": "1.6.101",
       "userInterfaceStyle": "automatic",
       "supportsTablet": true,
       "infoPlist": {
-        "NSContactsUsageDescription": "Access to your contacts is needed in order to load and save EteSync contacts.",
-        "NSCalendarsUsageDescription": "Access to your calendars is needed in order to load and save EteSync calendars.",
-        "NSRemindersUsageDescription": "Access to your reminders is needed in order to load and save EteSync reminders.",
+        "NSContactsUsageDescription": "Access to your contacts is needed in order to load and save Ciphwren contacts.",
+        "NSCalendarsUsageDescription": "Access to your calendars is needed in order to load and save Ciphwren calendars.",
+        "NSRemindersUsageDescription": "Access to your reminders is needed in order to load and save Ciphwren reminders.",
         "UIBackgroundModes": [
           "fetch"
         ]
@@ -35,8 +35,8 @@
       "config": {
         "usesNonExemptEncryption": false
       },
-      "publishBundlePath": "ios/etesync/Supporting/shell-app.bundle",
-      "publishManifestPath": "ios/etesync/Supporting/shell-app-manifest.json"
+      "publishBundlePath": "ios/ciphwren/Supporting/shell-app.bundle",
+      "publishManifestPath": "ios/ciphwren/Supporting/shell-app-manifest.json"
     },
     "isDetached": true,
     "detach": {
@@ -45,7 +45,7 @@
     },
     "scheme": "exp2904f03229f24a3ca9b3fcd8485120ca",
     "android": {
-      "package": "com.etesync.android",
+      "package": "com.ciphwren.ios",
       "publishBundlePath": "android/app/src/main/assets/shell-app.bundle",
       "publishManifestPath": "android/app/src/main/assets/shell-app-manifest.json"
     }

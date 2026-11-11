@@ -12,7 +12,7 @@ import { setSyncStateJournal, unsetSyncStateJournal, setSyncStateEntry, unsetSyn
 import { NativeBase, entryNativeHashCalc } from "../helpers";
 import { createJournalEntryFromSyncEntry } from "../../etesync-helpers";
 import { arrayToChunkIterator } from "../../helpers";
-import { BatchAction, HashDictionary } from "../../EteSyncNative";
+import { BatchAction, HashDictionary } from "../../CiphwrenNative";
 
 export const CHUNK_PULL = 30;
 export const CHUNK_PUSH = 30;

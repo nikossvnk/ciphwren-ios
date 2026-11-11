@@ -3,7 +3,7 @@
 
 import * as Calendar from "expo-calendar";
 
-import { calculateHashesForReminders, BatchAction, HashDictionary, processRemindersChanges } from "../EteSyncNative";
+import { calculateHashesForReminders, BatchAction, HashDictionary, processRemindersChanges } from "../CiphwrenNative";
 
 import { logger } from "../logging";
 

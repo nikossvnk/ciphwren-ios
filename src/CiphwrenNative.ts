@@ -15,7 +15,7 @@ export enum BatchAction {
   Delete = 3
 }
 
-interface EteSyncNativeModule {
+interface CiphwrenNativeModule {
   hashEvent(eventId: string): Promise<string>;
   calculateHashesForEvents(calendarId: string, from: number, to: number): Promise<HashesForItem[]>;
   processEventsChanges(containerId: string, events: ([BatchAction, NativeEvent])[]): Promise<HashDictionary>;
@@ -34,32 +34,32 @@ interface EteSyncNativeModule {
   playground(param: {}): void;
 }
 
-const EteSyncNative = NativeModules.EteSyncNative as EteSyncNativeModule;
+const CiphwrenNative = NativeModules.CiphwrenNative as CiphwrenNativeModule;
 
 export function calculateHashesForEvents(calendarId: string, from: Date, to: Date): Promise<HashesForItem[]> {
-  return EteSyncNative.calculateHashesForEvents(calendarId, from.getTime() / 1000, to.getTime() / 1000);
+  return CiphwrenNative.calculateHashesForEvents(calendarId, from.getTime() / 1000, to.getTime() / 1000);
 }
 
-export const hashEvent = EteSyncNative.hashEvent;
+export const hashEvent = CiphwrenNative.hashEvent;
 
 export function calculateHashesForReminders(calendarId: string): Promise<HashesForItem[]> {
-  return EteSyncNative.calculateHashesForReminders(calendarId);
+  return CiphwrenNative.calculateHashesForReminders(calendarId);
 }
-export const processEventsChanges = EteSyncNative.processEventsChanges;
+export const processEventsChanges = CiphwrenNative.processEventsChanges;
 
-export const hashReminder = EteSyncNative.hashReminder;
+export const hashReminder = CiphwrenNative.hashReminder;
 
 export function calculateHashesForContacts(containerId: string): Promise<HashesForItem[]> {
-  return EteSyncNative.calculateHashesForContacts(containerId);
+  return CiphwrenNative.calculateHashesForContacts(containerId);
 }
-export const processRemindersChanges = EteSyncNative.processRemindersChanges;
+export const processRemindersChanges = CiphwrenNative.processRemindersChanges;
 
-export const hashContact = EteSyncNative.hashContact;
-export const deleteContactGroupAndMembers = EteSyncNative.deleteContactGroupAndMembers;
-export const getContainers = EteSyncNative.getContainers;
-export const processContactsChanges = EteSyncNative.processContactsChanges;
+export const hashContact = CiphwrenNative.hashContact;
+export const deleteContactGroupAndMembers = CiphwrenNative.deleteContactGroupAndMembers;
+export const getContainers = CiphwrenNative.getContainers;
+export const processContactsChanges = CiphwrenNative.processContactsChanges;
 
-export const { beginBackgroundTask, endBackgroundTask } = EteSyncNative;
+export const { beginBackgroundTask, endBackgroundTask } = CiphwrenNative;
 
 
-export const playground = EteSyncNative.playground;
+export const playground = CiphwrenNative.playground;

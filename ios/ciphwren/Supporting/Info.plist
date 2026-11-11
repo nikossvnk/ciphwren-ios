@@ -5,11 +5,11 @@
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
 	<key>CFBundleDisplayName</key>
-	<string>EteSync</string>
+	<string>Ciphwren</string>
 	<key>CFBundleExecutable</key>
 	<string>$(EXECUTABLE_NAME)</string>
 	<key>CFBundleIdentifier</key>
-	<string>com.etesync.ios</string>
+	<string>com.ciphwren.ios</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleLocalizations</key>
@@ -17,7 +17,7 @@
 		<string>en</string>
 	</array>
 	<key>CFBundleName</key>
-	<string>EteSync</string>
+	<string>Ciphwren</string>
 	<key>CFBundlePackageType</key>
 	<string>APPL</string>
 	<key>CFBundleShortVersionString</key>
@@ -35,7 +35,7 @@
 			<string>OAuthRedirect</string>
 			<key>CFBundleURLSchemes</key>
 			<array>
-				<string>com.etesync.ios</string>
+				<string>com.ciphwren.ios</string>
 			</array>
 		</dict>
 	</array>
@@ -75,23 +75,23 @@
 		<true/>
 	</dict>
 	<key>NSCalendarsUsageDescription</key>
-	<string>Access to your calendars is needed in order to load and save EteSync calendars.</string>
+	<string>Access to your calendars is needed in order to load and save Ciphwren calendars.</string>
 	<key>NSCameraUsageDescription</key>
-	<string>Allow EteSync to use your camera</string>
+	<string>Allow Ciphwren to use your camera</string>
 	<key>NSContactsUsageDescription</key>
-	<string>Access to your contacts is needed in order to load and save EteSync contacts (including notes).</string>
+	<string>Access to your contacts is needed in order to load and save Ciphwren contacts (including notes).</string>
 	<key>NSLocationWhenInUseUsageDescription</key>
-	<string>Allow EteSync to use your location</string>
+	<string>Allow Ciphwren to use your location</string>
 	<key>NSMicrophoneUsageDescription</key>
-	<string>Allow EteSync to access your microphone</string>
+	<string>Allow Ciphwren to access your microphone</string>
 	<key>NSMotionUsageDescription</key>
-	<string>Allow EteSync to access your device's accelerometer</string>
+	<string>Allow Ciphwren to access your device's accelerometer</string>
 	<key>NSPhotoLibraryAddUsageDescription</key>
-	<string>Give EteSync permission to save photos</string>
+	<string>Give Ciphwren permission to save photos</string>
 	<key>NSPhotoLibraryUsageDescription</key>
-	<string>Give EteSync permission to access your photos</string>
+	<string>Give Ciphwren permission to access your photos</string>
 	<key>NSRemindersUsageDescription</key>
-	<string>Access to your reminders is needed in order to load and save EteSync reminders.</string>
+	<string>Access to your reminders is needed in order to load and save Ciphwren reminders.</string>
 	<key>UIBackgroundModes</key>
 	<array>
 		<string>fetch</string>

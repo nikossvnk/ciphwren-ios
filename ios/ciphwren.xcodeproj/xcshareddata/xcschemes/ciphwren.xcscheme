@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "B56386401DB9693800A0598C"
-               BuildableName = "etesync.app"
-               BlueprintName = "etesync"
-               ReferencedContainer = "container:etesync.xcodeproj">
+               BuildableName = "ciphwren.app"
+               BlueprintName = "ciphwren"
+               ReferencedContainer = "container:ciphwren.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "8C24C27E23B516D30092D9FD"
-               BuildableName = "EteSyncTests.xctest"
-               BlueprintName = "EteSyncTests"
-               ReferencedContainer = "container:etesync.xcodeproj">
+               BuildableName = "CiphwrenTests.xctest"
+               BlueprintName = "CiphwrenTests"
+               ReferencedContainer = "container:ciphwren.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -43,9 +43,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "B56386401DB9693800A0598C"
-            BuildableName = "etesync.app"
-            BlueprintName = "etesync"
-            ReferencedContainer = "container:etesync.xcodeproj">
+            BuildableName = "ciphwren.app"
+            BlueprintName = "ciphwren"
+            ReferencedContainer = "container:ciphwren.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -66,9 +66,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "B56386401DB9693800A0598C"
-            BuildableName = "etesync.app"
-            BlueprintName = "etesync"
-            ReferencedContainer = "container:etesync.xcodeproj">
+            BuildableName = "ciphwren.app"
+            BlueprintName = "ciphwren"
+            ReferencedContainer = "container:ciphwren.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <EnvironmentVariables>
@@ -92,9 +92,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "B56386401DB9693800A0598C"
-            BuildableName = "etesync.app"
-            BlueprintName = "etesync"
-            ReferencedContainer = "container:etesync.xcodeproj">
+            BuildableName = "ciphwren.app"
+            BlueprintName = "ciphwren"
+            ReferencedContainer = "container:ciphwren.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
