@@ -1,6 +1,6 @@
 //
-//  EteSyncTests.swift
-//  EteSyncTests
+//  CiphwrenTests.swift
+//  CiphwrenTests
 //
 //  Created by Me Me on 26/12/2019.
 //  Copyright © 2019 650 Industries, Inc. All rights reserved.
@@ -8,7 +8,7 @@
 
 import XCTest
 
-class EteSyncTests: XCTestCase {
+class CiphwrenTests: XCTestCase {
 
     override func setUp() {
         // Put setup code here. This method is called before the invocation of each test method in the class.

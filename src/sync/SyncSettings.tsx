@@ -5,7 +5,7 @@ import * as React from "react";
 
 import * as Calendar from "expo-calendar";
 import * as Contacts from "expo-contacts";
-import { getContainers } from "../EteSyncNative";
+import { getContainers } from "../CiphwrenNative";
 
 import { useDispatch, useSelector } from "react-redux";
 import { List, Button, Paragraph, useTheme } from "react-native-paper";
@@ -47,10 +47,10 @@ function SyncContactsConfirmationDialog(props: DialogPropsType) {
     >
       <>
         <Paragraph>
-          Unlike the calendar sync, the contact sync has no separation between existing contacts and EteSync contacts.
+          Unlike the calendar sync, the contact sync has no separation between existing contacts and Ciphwren contacts.
         </Paragraph>
         <Paragraph>
-          This means that once your turn this on, all of your local contacts will be automatically merged with your EteSync contacts.
+          This means that once your turn this on, all of your local contacts will be automatically merged with your Ciphwren contacts.
         </Paragraph>
       </>
     </ConfirmationDialog>
@@ -185,7 +185,7 @@ export default function SyncSettings() {
       >
         <>
           <Paragraph>
-            Disabling contacts sync will remove your EteSync contacts from your device. Would you like to procceed?
+            Disabling contacts sync will remove your Ciphwren contacts from your device. Would you like to procceed?
           </Paragraph>
           <Paragraph>
             If for example you are syncing with iCloud, your iCloud items will be removed too. Would you like to procceed?
@@ -211,7 +211,7 @@ export default function SyncSettings() {
       >
         <>
           <Paragraph>
-            Disabling calendars sync will remove your EteSync events and reminders from your device.
+            Disabling calendars sync will remove your Ciphwren events and reminders from your device.
           </Paragraph>
           <Paragraph>
             Would you like to procceed?

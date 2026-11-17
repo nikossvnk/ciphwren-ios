@@ -11,7 +11,7 @@ import { store, persistor, CredentialsData, SyncStateJournal, SyncStateEntry, as
 import { setSyncStateJournal, unsetSyncStateJournal, setSyncStateEntry, unsetSyncStateEntry, setSyncStatus, addError, itemBatch, changeQueueRemove, changeQueueAdd } from "../store/actions";
 import { NativeBase, entryNativeHashCalc } from "./helpers";
 import { arrayToChunkIterator } from "../helpers";
-import { BatchAction, HashDictionary } from "../EteSyncNative";
+import { BatchAction, HashDictionary } from "../CiphwrenNative";
 
 export const CHUNK_PULL = 30;
 export const CHUNK_PUSH = 30;

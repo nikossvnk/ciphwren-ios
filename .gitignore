@@ -310,25 +310,25 @@ buck-out/
 jarjar-rules.txt
 
 # Dynamic Macros
-/ios/etesync/Supporting/EXBuildConstants.plist.bak
-/ios/etesync/Supporting/EXBuildConstants.plist.json
-/ios/etesync/Supporting/EXBuildConstants.plist
-/ios/etesync/Supporting/EXBuildConstants.json
-/ios/etesync/Supporting/GoogleService-Info.plist
-/ios/etesync/Supporting/Info.plist.bak
-/ios/etesync/Supporting/Info.plist.json
-/android/expoview/src/main/java/host/exp/exponent/generated/etesyncBuildConstants.java
+/ios/ciphwren/Supporting/EXBuildConstants.plist.bak
+/ios/ciphwren/Supporting/EXBuildConstants.plist.json
+/ios/ciphwren/Supporting/EXBuildConstants.plist
+/ios/ciphwren/Supporting/EXBuildConstants.json
+/ios/ciphwren/Supporting/GoogleService-Info.plist
+/ios/ciphwren/Supporting/Info.plist.bak
+/ios/ciphwren/Supporting/Info.plist.json
+/android/expoview/src/main/java/host/exp/exponent/generated/ciphwrenBuildConstants.java
 /android/app/src/androidTest/java/host/exp/exponent/generated/TestBuildConstants.java
 .kernel-ngrok-url
 
 # Template files
 /android/app/src/main/AndroidManifest.xml
 /android/app/google-services.json
-/android/expoview/src/main/java/host/exp/exponent/generated/etesyncKeys.java
+/android/expoview/src/main/java/host/exp/exponent/generated/ciphwrenKeys.java
 /android/app/fabric.properties
 /apps/bare-expo/android/app/google-services.json
-/ios/etesync/Generated/EXKeys.h
-/ios/etesyncIntegrationTests/EXTestEnvironment.plist
+/ios/ciphwren/Generated/EXKeys.h
+/ios/ciphwrenIntegrationTests/EXTestEnvironment.plist
 /exponent-view-template/ios/Podfile
 
 # Codemod

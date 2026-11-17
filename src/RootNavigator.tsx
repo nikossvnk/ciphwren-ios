@@ -51,9 +51,9 @@ const wizardPages = [
   (props: PagePropsType) => (
     <>
       <View style={{ flex: 1, justifyContent: "center" }}>
-        <Title style={{ textAlign: "center" }}>Welcome to EteSync!</Title>
+        <Title style={{ textAlign: "center" }}>Welcome to Ciphwren!</Title>
         <Paragraph style={{ textAlign: "center" }}>
-          Please follow these few quick steps to setup the EteSync app.
+          Please follow these few quick steps to setup the Ciphwren app.
         </Paragraph>
       </View>
       <WizardNavigationBar {...props} />
@@ -70,10 +70,10 @@ const wizardPages = [
       <>
         <Title>Sync Settings</Title>
         <Paragraph>
-          EteSync syncs with your device's existing accounts, so you have to choose an account to sync with before going forward. For example, if you choose the iCloud account, all of your EteSync data will sync with iCloud.
+          Ciphwren syncs with your device's existing accounts, so you have to choose an account to sync with before going forward. For example, if you choose the iCloud account, all of your Ciphwren data will sync with iCloud.
         </Paragraph>
         <Paragraph>
-          iOS doesn't expose the "local" account unless all other accounts are disabled. Therefore, in order to only sync EteSync with your device, please first turn off iCloud sync for contacts, calendars and reminders (or only some of them) from the device's Settings app.
+          iOS doesn't expose the "local" account unless all other accounts are disabled. Therefore, in order to only sync Ciphwren with your device, please first turn off iCloud sync for contacts, calendars and reminders (or only some of them) from the device's Settings app.
         </Paragraph>
         <SyncSettings />
         <WizardNavigationBar {...props} />

@@ -102,7 +102,7 @@ export default function LogoutDialog(props: { visible: boolean, onDismiss: (logg
       {C.syncAppMode && (
         <>
           <Paragraph>
-            Additionally, should EteSync calendars and address books be removed from your device when logging out?
+            Additionally, should Ciphwren calendars and address books be removed from your device when logging out?
           </Paragraph>
           <List.Item
             title="Remove contacts"

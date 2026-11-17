@@ -4,7 +4,7 @@
 import * as Etebase from "etebase";
 import * as Contacts from "expo-contacts";
 
-import { deleteContactGroupAndMembers, calculateHashesForContacts, BatchAction, HashDictionary, processContactsChanges, getContainers } from "../EteSyncNative";
+import { deleteContactGroupAndMembers, calculateHashesForContacts, BatchAction, HashDictionary, processContactsChanges, getContainers } from "../CiphwrenNative";
 
 import { logger } from "../logging";
 

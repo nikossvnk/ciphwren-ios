@@ -27,10 +27,10 @@ export function AskForPermissions() {
       <Title>Permissions</Title>
       {(alreadyAsked) ?
         <Paragraph>
-          EteSync has already asked for the permissions before, so they can now only be changed from the device's Settings app.
+          Ciphwren has already asked for the permissions before, so they can now only be changed from the device's Settings app.
         </Paragraph>
         :
-        <Paragraph>EteSync requires access to your contacts, calendars and reminders in order to be able save them to your device. You can either give EteSync access now or do it later from the device Settings.</Paragraph>
+        <Paragraph>Ciphwren requires access to your contacts, calendars and reminders in order to be able save them to your device. You can either give Ciphwren access now or do it later from the device Settings.</Paragraph>
       }
       <Button mode="contained" disabled={alreadyAsked} style={{ marginTop: 20 }} onPress={() => {
         (async () => {

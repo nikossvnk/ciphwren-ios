@@ -9,9 +9,9 @@ let ActionDelete = 3
 
 let excalendar = EteEXCalendar()
 
-@objc(EteSyncNative)
-class EteSyncNative: NSObject {
-    let taskQueue = DispatchQueue(label: "com.etesync.DispatchQueue", attributes: .concurrent)
+@objc(CiphwrenNative)
+class CiphwrenNative: NSObject {
+    let taskQueue = DispatchQueue(label: "com.ciphwren.DispatchQueue", attributes: .concurrent)
     let eventStore = EKEventStore()
     let contactStore = CNContactStore()
     
@@ -99,7 +99,7 @@ class EteSyncNative: NSObject {
             for event in addChangeItems {
                 ret[localIdToUid[event.calendarItemIdentifier]!] = [
                     event.calendarItemIdentifier,
-                    etesync.hashEvent(event: event)
+                    ciphwren.hashEvent(event: event)
                 ]
             }
 
@@ -120,7 +120,7 @@ class EteSyncNative: NSObject {
     func hashEvent(eventId: String, resolve: RCTPromiseResolveBlock, reject: RCTPromiseRejectBlock) {
         let store = self.eventStore
         if let event = store.calendarItem(withIdentifier: eventId) as! EKEvent? {
-            resolve(etesync.hashEvent(event: event))
+            resolve(ciphwren.hashEvent(event: event))
         } else {
             reject("no_event", String(format: "Event with identifier %@ not found", eventId), nil)
         }
@@ -158,7 +158,7 @@ class EteSyncNative: NSObject {
                 
                 ret.append([
                     event.calendarItemIdentifier,
-                    etesync.hashEvent(event: event)
+                    ciphwren.hashEvent(event: event)
                 ])
             }
             
@@ -251,7 +251,7 @@ class EteSyncNative: NSObject {
             for reminder in addChangeItems {
                 ret[localIdToUid[reminder.calendarItemIdentifier]!] = [
                     reminder.calendarItemIdentifier,
-                    etesync.hashReminder(reminder: reminder)
+                    ciphwren.hashReminder(reminder: reminder)
                 ]
             }
             
@@ -271,7 +271,7 @@ class EteSyncNative: NSObject {
     func hashReminder(reminderId: String, resolve: RCTPromiseResolveBlock, reject: RCTPromiseRejectBlock) {
         let store = self.eventStore
         if let reminder = store.calendarItem(withIdentifier: reminderId) as! EKReminder? {
-            resolve(etesync.hashReminder(reminder: reminder))
+            resolve(ciphwren.hashReminder(reminder: reminder))
         } else {
             reject("no_reminder", String(format: "Reminder with identifier %@ not found", reminderId), nil)
         }
@@ -304,7 +304,7 @@ class EteSyncNative: NSObject {
 
                     ret.append([
                         reminder.calendarItemIdentifier,
-                        etesync.hashReminder(reminder: reminder)
+                        ciphwren.hashReminder(reminder: reminder)
                     ])
                 }
                 
@@ -343,7 +343,7 @@ class EteSyncNative: NSObject {
     ] as [CNKeyDescriptor]
     
     private class func getFetchRequest(predicate: NSPredicate) -> CNContactFetchRequest {
-        let fetchRequest = CNContactFetchRequest(keysToFetch: EteSyncNative.keysToFetch)
+        let fetchRequest = CNContactFetchRequest(keysToFetch: CiphwrenNative.keysToFetch)
         fetchRequest.unifyResults = false
         fetchRequest.predicate = predicate
         return fetchRequest
@@ -353,12 +353,12 @@ class EteSyncNative: NSObject {
     func hashContact(contactId: String, resolve: RCTPromiseResolveBlock, reject: RCTPromiseRejectBlock) {
         let store = self.contactStore
         let predicate = CNContact.predicateForContacts(withIdentifiers: [contactId])
-        let fetchRequest = EteSyncNative.getFetchRequest(predicate: predicate)
+        let fetchRequest = CiphwrenNative.getFetchRequest(predicate: predicate)
         
         var ret: String? = nil
         do {
             try store.enumerateContacts(with: fetchRequest, usingBlock: { (contact, _) in
-                ret = etesync.hashContact(contact: contact)
+                ret = ciphwren.hashContact(contact: contact)
             })
         } catch {
             reject("fetch_failed", "Failed fethcing contact", error)
@@ -377,14 +377,14 @@ class EteSyncNative: NSObject {
         taskQueue.async {
             let store = self.contactStore
             let predicate = CNContact.predicateForContactsInContainer(withIdentifier: containerId)
-            let fetchRequest = EteSyncNative.getFetchRequest(predicate: predicate)
+            let fetchRequest = CiphwrenNative.getFetchRequest(predicate: predicate)
             
             var ret: [[String]] = []
             do {
                 try store.enumerateContacts(with: fetchRequest, usingBlock: { (contact, _) in
                     ret.append([
                         contact.identifier,
-                        etesync.hashContact(contact: contact)
+                        ciphwren.hashContact(contact: contact)
                     ])
                 })
             } catch {
@@ -426,7 +426,7 @@ class EteSyncNative: NSObject {
             
             if (!fetchContactsIds.isEmpty) {
                 let predicate = CNContact.predicateForContacts(withIdentifiers: fetchContactsIds)
-                let fetchRequest = EteSyncNative.getFetchRequest(predicate: predicate)
+                let fetchRequest = CiphwrenNative.getFetchRequest(predicate: predicate)
                 fetchRequest.mutableObjects = true
                 
                 do {
@@ -482,7 +482,7 @@ class EteSyncNative: NSObject {
             for contact in addChangeContacts {
                 ret[localIdToUid[contact.identifier]!] = [
                     contact.identifier,
-                    etesync.hashContact(contact: contact)
+                    ciphwren.hashContact(contact: contact)
                 ]
             }
 

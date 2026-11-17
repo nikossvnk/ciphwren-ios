@@ -137,7 +137,7 @@ function EncryptionPart() {
       <Headline>Encryption Password</Headline>
       {(isNewUser) ?
         <View>
-          <Subheading>Welcome to EteSync!</Subheading>
+          <Subheading>Welcome to Ciphwren!</Subheading>
           <Paragraph>
             Please set your encryption password below, and make sure you got it right, as it can't be recovered if lost!
           </Paragraph>
